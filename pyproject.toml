@@ -1,0 +1,29 @@
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "final-project"
+version = "0.1.0"
+description = "CDS Hook project for proactive screening"
+authors = ["Connor"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+
+# Core packages
+streamlit = "^1.30.0"
+flask = "^3.1.0"
+pymongo = "^4.11.3"
+
+# Data + plotting
+pandas = "^2.2.3"
+matplotlib = "^3.10.1"
+
+# Dev/test tools
+notebook = "^7.3.3"
+requests = "^2.31.0"  # ← Required for UMLS lookups
+python-dotenv = "^1.1.0"
+fpdf = "^1.7.2"
